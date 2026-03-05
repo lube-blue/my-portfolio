@@ -17,7 +17,7 @@ const About = () => {
           {/* --- ฝั่งซ้าย: รูปภาพ --- */}
           <div className="about-img-container">
              <img 
-               src="/YourPicture.jpg" 
+               src="/Blue.jpg" 
                alt="About Lifestyle" 
                className="about-lifestyle-img" 
              />

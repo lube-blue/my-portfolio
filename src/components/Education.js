@@ -2,7 +2,7 @@ import React from 'react';
 
 const Education = () => {
   return (
-    <section id="education" className="resume-section container" style={{paddingTop: '0'}}> 
+    <section id="education" className="resume-section container">
       {/* paddingTop 0 เพราะมันต่อจาก Experience เดี๋ยวจะห่างไป */}
 
       <div className="resume-header">

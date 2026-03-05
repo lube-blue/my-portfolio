@@ -82,7 +82,7 @@ section { padding: 100px 0; }
    2. NAVBAR STYLE & HOVER EFFECT
    ========================================= */
 .navbar-tamal {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   display: flex;
@@ -104,31 +104,35 @@ section { padding: 100px 0; }
 /* จัดเมนูให้อยู่กึ่งกลางเป๊ะๆ และปรับระยะห่าง */
 .nav-menu-tamal {
   display: flex;
-  gap: 50px;
+  gap: 40px; /* ลดระยะห่างลงนิดนึงเพื่อพื้นที่จอเล็ก */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  white-space: nowrap; /* ล็อคบรรทัด */
 }
 
 .nav-menu-tamal a {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* จัดชิดซ้าย */
   text-decoration: none;
   color: #ffffff;
   transition: opacity 0.3s ease;
+  white-space: nowrap; /* ล็อคบรรทัด */
 }
 
 .nav-num {
   font-size: 0.85rem;
   color: #888;
   margin-bottom: 4px;
+  margin-left: 18px; /* ขยับตัวเลขให้ตรงกับ / พอดีเป๊ะ */
 }
 
 .nav-text {
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 2px;
+  white-space: nowrap; /* ล็อคบรรทัด */
 }
 
 .nav-menu-tamal:hover a { opacity: 0.3; }
@@ -512,4 +516,8 @@ section { padding: 100px 0; }
   .contact-actions {
     flex-wrap: wrap; /* ถ้าจอมือถือเล็กให้ปุ่มไหลลงมา */
   }
+}
+h1, h2, h3, h4, h5, h6, p, span, a, button {
+  user-select: none;
+  -webkit-user-select: none; /* สำหรับ Safari */
 }
